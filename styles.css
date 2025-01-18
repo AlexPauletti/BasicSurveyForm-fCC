@@ -1,0 +1,44 @@
+body {
+  margin: auto auto;
+  background-color: black;
+  color: green;
+  font-family: Georgia;
+  font-size: 18px;
+  max-width: 500px;
+  min-width: 200px;
+}
+
+h1, p[id="description"] {
+  text-align: center;
+}
+
+input, select {
+  margin: 0.3em auto 15px auto;
+  width: 100%;
+  background-color: #101210;
+  color: white;
+}
+
+legend, label {
+  display: block;
+  margin: 1rem 0 0 0
+}
+
+fieldset {
+  padding: 10px 30px 10px 20px;
+}
+
+input[name="existing-user"], input[type="checkbox"] {
+  width: unset;
+  margin-right: 5px; 
+}
+
+textarea {
+  margin-top: 8px;
+}
+
+label[name="submit-button"] {
+  max-width: 70%;
+  margin: 20px auto;
+  height: 50px;
+}

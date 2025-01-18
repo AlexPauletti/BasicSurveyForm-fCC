@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>freeCodeCamp Survey Form</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out these fields to help with our analytics:<p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Your Name: <input required id="name" placeholder="John Smith" type="text"/></label>
+        <label for="email" id="email-label">Your Email: <input required id="email" placeholder="johnsmith@domain.com" type="email"/></label>
+        <label for="number" id="number-label">Level of satisfaction with the course: <input id="number" required placeholder="0-100" type="number" min="0" max="100"/></label>
+        <label for="dropdown">Which course did you take?
+          <select required id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Responsive Web Design</option>
+            <option value="2">Legacy Python for Everybody</option>
+            <option value="3">Coding Interview Prep</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Were you already a freeCodeCamp User?</legend>
+        <label for="existing-user"><input value="0" type="radio" checked name="existing-user"/>Yes</label>
+        <label for="existing-user"><input value="1" type="radio" name="existing-user"/>No</label>
+      </fieldset>
+      <fieldset>
+        <legend>Where did you learn about us?</legend>
+        <label><input type="checkbox" value="0"/>Youtube</label>
+        <label><input type="checkbox" value="1"/>Instagram</label>
+        <label><input type="checkbox" value="2"/>Friends</label>
+        <label><input type="checkbox" value="3"/>Other</label>
+        <label for="observations">Share any thoughts you have with us:
+          <textarea name="observations" cols="50" rows="5"></textarea>
+        </label>  
+      </fieldset>
+      <label name="submit-button">
+        <input id="submit" type="submit" value="Submit"/>
+      </label> 
+    </form>
+  </body>
+</html>
